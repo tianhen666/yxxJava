@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lechi.yxx.mapper.StoreProductMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.lechi.yxx.model.StoreProduct">
+        <id column="id" property="id" />
+        <result column="store_id" property="store_id" />
+        <result column="title" property="title" />
+        <result column="desc" property="desc" />
+        <result column="pics" property="pics" />
+        <result column="expire_day" property="expire_day" />
+        <result column="avaliable_count" property="avaliable_count" />
+        <result column="limit_count" property="limit_count" />
+        <result column="price" property="price" />
+        <result column="price_normal" property="price_normal" />
+        <result column="notice" property="notice" />
+        <result column="status" property="status" />
+        <result column="create_dt" property="create_dt" />
+        <result column="modify_dt" property="modify_dt" />
+        <result column="flag" property="flag" />
+        <result column="order_num" property="order_num" />
+        <result column="share_pic" property="share_pic" />
+        <result column="start_dt" property="start_dt" />
+        <result column="end_dt" property="end_dt" />
+        <result column="detail" property="detail" />
+        <result column="sale_dt" property="sale_dt" />
+        <result column="share_price" property="share_price" />
+        <result column="buy_notice" property="buy_notice" />
+        <result column="need_express" property="need_express" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, store_id, title, desc, pics, expire_day, avaliable_count, limit_count, price, price_normal, notice, status, create_dt, modify_dt, flag, order_num, share_pic, start_dt, end_dt, detail, sale_dt, share_price, buy_notice, need_express
+    </sql>
+
+</mapper>

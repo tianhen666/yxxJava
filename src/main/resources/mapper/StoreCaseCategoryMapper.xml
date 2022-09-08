@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lechi.yxx.mapper.StoreCaseCategoryMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.lechi.yxx.model.StoreCaseCategory">
+        <id column="id" property="id" />
+        <result column="parent_id" property="parentId" />
+        <result column="store_id" property="storeId" />
+        <result column="name" property="name" />
+        <result column="order_no" property="orderNo" />
+        <result column="create_dt" property="createDt" />
+        <result column="modify_dt" property="modifyDt" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, parent_id, store_id, name, order_no, create_dt, modify_dt
+    </sql>
+
+</mapper>

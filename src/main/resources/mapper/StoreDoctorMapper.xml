@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lechi.yxx.mapper.StoreDoctorMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.lechi.yxx.model.StoreDoctor">
+        <id column="id" property="id" />
+        <result column="store_id" property="storeId" />
+        <result column="name" property="name" />
+        <result column="avatar" property="avatar" />
+        <result column="post" property="post" />
+        <result column="detail" property="detail" />
+        <result column="create_dt" property="createDt" />
+        <result column="weight" property="weight" />
+        <result column="cert_main" property="certMain" />
+        <result column="cert_info" property="certInfo" />
+        <result column="cert_change" property="certChange" />
+        <result column="card_front" property="cardFront" />
+        <result column="card_back" property="cardBack" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, store_id, name, avatar, post, detail, create_dt, weight, cert_main, cert_info, cert_change, card_front, card_back
+    </sql>
+
+</mapper>

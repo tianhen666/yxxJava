@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lechi.yxx.mapper.BannerMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.lechi.yxx.model.Banner">
+        <id column="id" property="id" />
+        <result column="store_id" property="store_id" />
+        <result column="banner" property="banner" />
+        <result column="sfuse" property="sfuse" />
+        <result column="flag" property="flag"/>
+        <result column="defaultam" property="defaultam"/>
+        <result column="sort" property="sort"/>
+        <result column="banurl" property="banurl"/>
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, store_id, banner,sfuse,flag,defaultam,sort,banurl
+    </sql>
+
+</mapper>

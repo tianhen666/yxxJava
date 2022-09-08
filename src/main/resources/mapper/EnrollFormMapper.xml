@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lechi.yxx.mapper.EnrollFormMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.lechi.yxx.model.EnrollForm">
+        <id column="id" property="id" />
+        <result column="user_id" property="userId" />
+        <result column="store_id" property="storeId" />
+        <result column="title" property="title" />
+        <result column="content" property="content" />
+        <result column="status" property="status" />
+        <result column="create_dt" property="createDt"/>
+        <result column="main_pic" property="mainPic" />
+        <result column="start_dt" property="startDt" />
+        <result column="end_dt" property="endDt" />
+        <result column="price" property="price" />
+        <result column="flag" property="flag" />
+        <result column="type" property="type" />
+        <result column="least" property="least" />
+        <result column="product_id" property="productId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, user_id, store_id, title, content, status, create_dt, main_pic, imgs, post_pic, start_dt, end_dt, post_dt, price, share_price, share_pic, virtual_data, show_share, limit, need_express, tmp_id, flag, type, least, quantity, product_id, share_price_type
+    </sql>
+
+</mapper>

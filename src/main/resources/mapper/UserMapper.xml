@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lechi.yxx.mapper.UserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.lechi.yxx.model.User">
+        <id column="id" property="id" />
+        <result column="nickname" property="nickname" />
+        <result column="mobile" property="mobile" />
+        <result column="avatar" property="avatar" />
+        <result column="openid" property="openid" />
+        <result column="unionid" property="unionid" />
+        <result column="city" property="city" />
+        <result column="province" property="province" />
+        <result column="sex" property="sex" />
+        <result column="create_dt" property="createDt" />
+        <result column="hd_openid" property="hdOpenid" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, nickname, mobile, avatar, openid, unionid, city, province, sex, create_dt, hd_openid
+    </sql>
+
+</mapper>

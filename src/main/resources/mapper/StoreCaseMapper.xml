@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lechi.yxx.mapper.StoreCaseMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.lechi.yxx.model.StoreCase">
+        <id column="id" property="id" />
+        <result column="store_id" property="storeId" />
+        <result column="category_id" property="categoryId" />
+        <result column="title" property="title" />
+        <result column="main_pic" property="mainPic" />
+        <result column="detail" property="detail" />
+        <result column="before_desc" property="beforeDesc" />
+        <result column="before_pics" property="beforePics" />
+        <result column="after_desc" property="afterDesc" />
+        <result column="after_pics" property="afterPics" />
+        <result column="notice_desc" property="noticeDesc" />
+        <result column="evaluation_desc" property="evaluationDesc" />
+        <result column="start_dt" property="startDt" />
+        <result column="end_dt" property="endDt" />
+        <result column="create_dt" property="createDt" />
+        <result column="modify_dt" property="modifyDt" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, store_id, category_id, title, main_pic, detail, before_desc, before_pics, after_desc, after_pics, notice_desc, evaluation_desc, start_dt, end_dt, create_dt, modify_dt
+    </sql>
+
+</mapper>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lechi.yxx.mapper.StoreOrderReviewMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.lechi.yxx.model.StoreOrderReview">
+        <id column="id" property="id" />
+        <result column="content" property="content" />
+        <result column="create_dt" property="createDt" />
+        <result column="flag" property="flag" />
+        <result column="is_virtual" property="isVirtual" />
+        <result column="modify_dt" property="modifyDt" />
+        <result column="order_id" property="orderId" />
+        <result column="pics" property="pics" />
+        <result column="rate" property="rate" />
+        <result column="store_id" property="storeId" />
+        <result column="target_id" property="targetId" />
+        <result column="type" property="type" />
+        <result column="user_id" property="userId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, content, create_dt, flag, is_virtual, modify_dt, order_id, pics, rate, store_id, target_id, type, user_id
+    </sql>
+
+</mapper>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lechi.yxx.mapper.StoreServeMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.lechi.yxx.model.StoreServe">
+        <id column="id" property="id" />
+        <result column="store_id" property="storeId" />
+        <result column="pic" property="pic" />
+        <result column="title" property="title" />
+        <result column="desc" property="desc" />
+        <result column="create_dt" property="createDt" />
+        <result column="modify_dt" property="modifyDt" />
+        <result column="flag" property="flag" />
+        <result column="weight" property="weight" />
+        <result column="views" property="views" />
+        <result column="details" property="details" />
+        <result column="post_pic" property="postPic" />
+        <result column="share_pic" property="sharePic" />
+        <result column="product_id" property="productId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, store_id, pic, title, desc, create_dt, modify_dt, flag, weight, views, details, post_pic, share_pic, product_id
+    </sql>
+
+</mapper>

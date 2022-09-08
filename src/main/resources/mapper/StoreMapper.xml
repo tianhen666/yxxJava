@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lechi.yxx.mapper.StoreMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.lechi.yxx.model.Store">
+        <id column="id" property="id" />
+        <result column="user_id" property="userId" />
+        <result column="name" property="name" />
+        <result column="mobile" property="mobile" />
+        <result column="icon" property="icon" />
+        <result column="pics" property="pics" />
+        <result column="inner_pics" property="innerPics" />
+        <result column="address" property="address" />
+        <result column="address_detail" property="addressDetail" />
+        <result column="area_id" property="areaId" />
+        <result column="area_name" property="areaName" />
+        <result column="open_time" property="openTime" />
+        <result column="desc" property="desc" />
+        <result column="lng" property="lng" />
+        <result column="lat" property="lat" />
+        <result column="create_dt" property="createDt" />
+        <result column="modify_dt" property="modifyDt" />
+        <result column="look_num" property="lookNum" />
+        <result column="contact_name" property="contactName" />
+        <result column="activity_store" property="activityStore" />
+        <result column="order_num" property="orderNum" />
+        <result column="category_id" property="categoryId" />
+        <result column="last_login_dt" property="lastLoginDt" />
+        <result column="sup_id" property="supId" />
+        <result column="is_sup" property="isSup" />
+        <result column="expire_dt" property="expireDt" />
+        <result column="level" property="level" />
+        <result column="flag" property="flag" />
+        <result column="business_license" property="businessLicense" />
+        <result column="organization_license" property="organizationLicense" />
+        <result column="license_status" property="licenseStatus" />
+        <result column="ad_license" property="adLicense" />
+        <result column="remark" property="remark" />
+        <result column="active_dt" property="activeDt" />
+        <result column="is_hd" property="isHd" />
+        <result column="hd_expire" property="hdExpire" />
+        <result column="staff_limit" property="staffLimit" />
+        <result column="qrcode" property="qrcode" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, user_id, name, mobile, icon, pics, inner_pics, address, address_detail, area_id, area_name, open_time, desc, lng, lat, create_dt, modify_dt, look_num, contact_name, activity_store, order_num, category_id, last_login_dt, sup_id, is_sup, expire_dt, level, flag, business_license, organization_license, license_status, ad_license, remark, active_dt, is_hd, hd_expire, staff_limit, qrcode
+    </sql>
+
+</mapper>

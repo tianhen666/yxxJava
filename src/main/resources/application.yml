@@ -1,0 +1,45 @@
+server:
+  port: 8089
+spring:
+  datasource:
+    #数据库配置
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/tooth?useSSL=false&useUnicode=true&characterEncoding=UTF-8&useSSL=false
+
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+  redis:
+    host: 127.0.0.1
+    password: root
+    port: 6379
+#  profiles:
+#    active: swagger
+
+#mybatis-plus配置
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: false
+  global-config:
+    db-config:
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+
+weixin:
+  #appid: '394D9D85E33C1A3054AFA7F3BBB8A6E7'
+  appid: 'wx71a133fc3dd05316'
+  #secret: '90712A427A2E9A5868886CBA43705F9F'
+  secret: '2a4087e0f4a4b30bc83bf53b64128390'
+  token:
+  key:
+
+ftpServer:
+  ftp_ip: 139.224.191.39
+  ftp_port: 21
+  ftp_username: root
+  ftp_password: root
+  ftp_uploadPath: /NewsWebSite/images/tooth
+
